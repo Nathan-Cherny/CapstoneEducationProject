@@ -1,7 +1,66 @@
-﻿### QuagBot
+# Chatbot UI
 
- Many students, with the excess of information on the internet, often can find it difficult to locate accurate facts about what they're trying to learn. Especially for history, with its many interpretations and different lenses it's portrayed, it's often difficult to know for sure what you're looking up is right. Turning to AI is a smart move, however, AI tends to hallucinate and provide information that may not be accurate. To fix this problem, we propose developing a web app which specializes on one critical point in history, the Revolutionary War, to provide clear, factual and referenced information about this topic through an AI chatbot that allows users to ask specific questions about this topic (and this topic alone) which will then be answered concisely and with our carefully thought uploaded sources sited. 
+A lightweight and modern chat interface for LLM interactions with Markdown support!
 
-Students will be able to make an account and have a dashboard in which they can see all their previous chats, sort by dates, and name their chats. This allows them to be organized and plan their studying in a more efficient matter, breaking topics into different tasks and tackling them one by one. Additionally, students will be able to analyze their chats beyond simply rereading them – by sharing their chats with other students and generating new study guides from the chats in-app, every student will have an opportunity to work on the areas that they struggle with the most. Students are allowed only a certain amount of queries per day, which we will enforce and make plainly visible on their individual dashboards. We also plan to give teachers the ability to see their students chats to view their progress and what they've been asking the app. By logging in as a teacher and sharing a code to their students, teachers will be able to view their student's chats via an interactive dashboard, similar to what the students can see. 
+👉 Looking for a version with web search integration?   
+Check out the [`websearch_template`](https://github.com/ChristophHandschuh/chatbot-ui/tree/websearch_template) branch, which includes contributions from [CameliaK](https://github.com/CameliaK)
 
-<img width="1106" height="908" alt="Screenshot 2026-09-15 101804" src="https://github.com/user-attachments/assets/9779d809-a7d7-4659-8578-a0d3fb4cf41c" />
+WebSocket connection refactured by [GBG7](https://github.com/GBG7)
+
+## Overview
+
+A minimalist chat interface built with React and TypeScript, designed to be easily integrated with any LLM backend. Features a clean and modern design.
+
+![Demo](demo/image.png)
+
+## Getting Started
+
+1. Clone the repository
+```bash
+git clone https://github.com/ChristophHandschuh/chatbot-ui.git
+cd chatbot-ui
+```
+
+2. Install dependencies
+```bash
+npm i
+```
+
+3. Start the development server
+```bash
+npm run dev
+```
+
+## Test Mode
+
+The project includes a test backend for development and testing purposes. To use the test mode:
+
+1. Navigate to the testbackend directory
+2. Create a Python virtual environment:
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+```
+3. Install the required package:
+```bash
+pip install websockets
+```
+4. Run the test backend:
+```bash
+python test.py
+```
+
+## Credits
+
+This project was built by:
+- [Leon Binder](https://github.com/LeonBinder)
+- [Christoph Handschuh](https://github.com/ChristophHandschuh)
+
+Additional contribution by:
+- [CameliaK](https://github.com/CameliaK) – Implemented web search and integrated it into the LLM prompt
+
+Some code components were inspired by and adapted from [Vercel's AI Chatbot](https://github.com/vercel/ai-chatbot).
+
+## License
+
+This project is licensed under the Apache License 2.0. Please note that some components were adapted from Vercel's open source AI Chatbot project.
